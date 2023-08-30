@@ -14,18 +14,20 @@ const requestListener = function (req, res) {
 if (req.url === "/") {
 
  // check request url, if root, return html file  // dir name is the absolute path to the file
- fs.readFile(__dirname + "/page.html")
- .then(contents => {
+ fs.readFile(__dirname + "/list.html" )
+ .then(
+   contents => {
    // set http response header entry
     res.setHeader("Content-Type", "text/html; charset=UTF-8");
     // retrun 200 ok jttp status code
     res.writeHead(200);
     // send back file contents + close response
     res.end(contents);
-  });
+  }
+ )
 } else {
   // if request url not root, return json file
-fs.readFile(__dirname + "/data.json")
+fs.readFile(__dirname + "/socials.json")
   .then(contents => {
     // set http response header entry
     res.setHeader("Content-Type", "application/json; charset=UTF-8");
@@ -47,7 +49,9 @@ const port = "8080";
 
 // call the listen() method to start Listening to http requests 
 server.listen(
-  port, host, () => {
+  port,
+  host,
+  () => {
   console.log(`Server is running on http://${host}:${port}`);
   //above identical to sonsole.log("Server is  running on http://" + host + port);
   }

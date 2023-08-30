@@ -1,0 +1,30 @@
+[
+  {
+    "socialmedia": "Facebook",
+    "link": "https://facebook.com/"
+  },
+  {
+    "socialmedia": "LinkedIn",
+    "link": "https://linkedin.com/"
+  },
+  {
+    "socialmedia": "Instagram",
+    "link": "https://Instagram.com/"
+  },
+  {
+    "socialmedia": "TikTok",
+    "link": "https://tiktok.com/"
+  },
+  {
+    "socialmedia": "Pinterest",
+    "link": "https://pinterest.com/"
+  },
+  {
+    "socialmedia": "Youtube",
+    "link": "https://youtube.com/"
+  },
+  {
+    "socialmedia": "X",
+    "link": "https://x.com/"
+  }
+]
